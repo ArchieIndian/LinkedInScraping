@@ -9,8 +9,8 @@ a = Mechanize.new { |agent|
 
 a.get('http://linkedin.com/') do |home_page|
 	my_page = home_page.form_with(:name => 'login') do |form|
-        form.session_key  = 'mitra.arkid@gmail.com'   #put you email ID
-        form.session_password = 'Npoint0@'  #put your password here
+        form.session_key  = '*******'   #put you email ID
+        form.session_password = '*******'  #put your password here
 end.submit 
   
 # form = a.page.form_with(:name=>'postModuleForm')    #these three lines of code can help you update your linkedin status
